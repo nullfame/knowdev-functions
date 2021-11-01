@@ -12,6 +12,7 @@
     "test": "jest src/",
     "test:clean": "rimraf coverage/",
     "test:coverage": "jest --coverage src/",
+    "test:spec:envBoolean": "jest ./src/__tests__/envBoolean.spec.js",
     "postversion": "npm publish"
   },
   "devDependencies": {
