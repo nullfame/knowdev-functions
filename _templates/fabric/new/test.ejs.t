@@ -1,7 +1,7 @@
 ---
-to: src/<%= subtypes %>/__tests__/<%= name %>.<%= subtype %>.spec.js
+to: src/__tests__/<%= name %>.spec.js
 ---
-/* eslint-disable global-require */
+const <%= name %> = require("../<%= name %>");
 
 //
 //
@@ -31,11 +31,10 @@ afterEach(() => {
 // Run tests
 //
 
-describe("<%= Name %> <%= subtype %>", () => {
+describe("<%= Name %>", () => {
   it("Works", async () => {
-    const <%= name %> = require("../<%= name %>.<%= subtype %>");
     const response = await <%= name %>();
     console.log("response :>> ", response);
-    expect(response.statusCode).toBe(200);
+    // expect(response).toBeObject();
   });
 });
