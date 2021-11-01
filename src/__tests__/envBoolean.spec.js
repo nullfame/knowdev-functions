@@ -37,6 +37,10 @@ describe("EnvBoolean", () => {
     const response = await envBoolean(MOCK.KEY);
     expect(response).toBeUndefined();
   });
+  it("Returns a default value that can be set", async () => {
+    const response = await envBoolean(MOCK.KEY, { defaultValue: true });
+    expect(response).toBeTrue();
+  });
   it("Returns true when string true", async () => {
     process.env[MOCK.KEY] = "true";
     const response = await envBoolean(MOCK.KEY);

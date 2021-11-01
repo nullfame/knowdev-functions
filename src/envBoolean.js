@@ -13,7 +13,7 @@
 // Main
 //
 
-const envBoolean = (key) => {
+const envBoolean = (key, { defaultValue = undefined } = {}) => {
   switch (String(process.env[key]).toLowerCase()) {
     case "true":
     case "1":
@@ -24,7 +24,7 @@ const envBoolean = (key) => {
       return false;
 
     default:
-      return undefined;
+      return defaultValue;
   }
 };
 

@@ -25,6 +25,16 @@ if (envBoolean("AWESOME")) {
 }
 ```
 
+#### envBoolean: defaultValue
+
+``` javascript
+const { envBoolean } = require("@knowdev/functions");
+
+if (envBoolean("AWESOME", { defaultValue: true })) {
+  console.log("Awesome!");
+}
+```
+
 ## 🚀 Deployment
 
 `npm publish --access=public`
