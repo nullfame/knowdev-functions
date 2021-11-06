@@ -35,12 +35,22 @@ if (envBoolean("AWESOME", { defaultValue: true })) {
 }
 ```
 
+### getObjectKeyCaseInsensitive
+
+``` javascript
+const { getObjectKeyCaseInsensitive } = require("@knowdev/functions");
+
+const object = { one: 1 };
+getObjectKeyCaseInsensitive(object, "ONE"); // 1
+```
+
 ## 🚀 Deployment
 
 `npm publish --access=public`
 
 ## 📝 Changelog
 
+* 0.2.0: getObjectKeyCaseInsensitive
 * 0.1.0: envBoolean
 
 ## 📜 License
