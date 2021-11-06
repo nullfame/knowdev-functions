@@ -1,10 +1,4 @@
-const envBoolean = require("./envBoolean");
-
-//
-//
-// Export
-//
-
+/* eslint-disable global-require */
 module.exports = {
-  envBoolean,
+  envBoolean: require("./envBoolean"),
 };
