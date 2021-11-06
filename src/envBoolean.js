@@ -1,3 +1,5 @@
+const getObjectKeyCaseInsensitive = require("./getObjectKeyCaseInsensitive");
+
 //
 //
 // Constants
@@ -14,7 +16,7 @@
 //
 
 const envBoolean = (key, { defaultValue = undefined } = {}) => {
-  switch (String(process.env[key]).toLowerCase()) {
+  switch (String(getObjectKeyCaseInsensitive(process.env, key)).toLowerCase()) {
     case "true":
     case "1":
       return true;
