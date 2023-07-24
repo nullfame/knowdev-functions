@@ -14,6 +14,7 @@
     "test:coverage": "jest --coverage src/",
     "test:spec:envBoolean": "jest ./src/__tests__/envBoolean.spec.js",
     "test:spec:getObjectKeyCaseInsensitive": "jest ./src/__tests__/getObjectKeyCaseInsensitive.spec.js",
+    "test:spec:placeholders": "jest ./src/__tests__/placeholders.spec.js",
     "postversion": "npm publish"
   },
   "devDependencies": {
@@ -23,11 +24,9 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.4",
     "hygen": "^6.1.0",
     "jest": "^27.3.1",
     "jest-extended": "^1.1.0",
-    "lint-staged": "^11.2.6",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.52.0"
